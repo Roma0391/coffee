@@ -1,0 +1,40 @@
+
+.navigation {
+  width: 320px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  :first-child:before {
+    content: url("img/NavCoffeeWhite.png");
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 5px;
+    right: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  &.white {
+    :first-child:before {
+      content: url("img/NavCoffeeWhite.png");
+    }
+    a {
+      color: #ffffff;
+    }
+  }
+  &.black {
+    :first-child:before {
+      content: url("img/NavCoffeeBlack.png");
+    }
+    a {
+      color: #000000;
+    }
+  }
+}

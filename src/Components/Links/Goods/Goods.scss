@@ -1,0 +1,26 @@
+
+.about_descr {
+  width: 40%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  img {
+    width: 272px;
+    height: 355px;
+    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+
+  }
+}
+.line {
+  width: 240px;
+  border: 1px solid black;
+  margin: 60px auto;
+}
+.goods {
+  width: 50%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

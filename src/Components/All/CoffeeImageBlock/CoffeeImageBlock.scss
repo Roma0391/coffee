@@ -1,0 +1,40 @@
+.coffeeBlock {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+  :before {
+    content: "";
+    width: 60px;
+    position: absolute;
+    right: 40px;
+    top: 14px;
+  }
+  :after {
+    content: "";
+    width: 60px;
+    position: absolute;
+    left: 40px;
+    top: 14px;
+  }
+  &.black {
+    background-image: url("./img/BlockCoffeeBlack.png");
+    :before {
+      border: 1px solid black;
+    }
+    :after {
+      border: 1px solid black;
+    }
+  }
+  &.white {
+    background-image: url("./img/BlockCoffeeWhite.png");
+    :before {
+      border: 1px solid white;
+    }
+    :after {
+      border: 1px solid white;
+    }
+  }
+
+}
